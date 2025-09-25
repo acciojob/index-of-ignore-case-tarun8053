@@ -1,17 +1,8 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
-   let str1 = s1.toLowerCase();
-let arr = str1.split(" ");
-let ss = s2.toLowerCase();
-	let arr2 = ss.split(" ");
-let len = 0;
-
-for(let i = 0; i < arr.length; i++){
-    if(arr[i] == arr2[0]) break;
-    len += arr[i].length + i;;
-}
-return len;
-
+ let str = s1.toLowerCase();
+ let str2 = s2.toLowerCase();
+	return str.indexOf(str2);
+	
 }
 
 Please do not change the code below
